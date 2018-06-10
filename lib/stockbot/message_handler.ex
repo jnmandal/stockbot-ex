@@ -3,6 +3,7 @@ defmodule Stockbot.MessageHandler do
   the message handler for our bot
   """
   require Logger
+  use Private
 
   alias Stockbot.MessageQueue
 
@@ -27,8 +28,6 @@ defmodule Stockbot.MessageHandler do
     defp handle_dequeue({:error, :empty}) do
     end
 
-    defp handle_message() do
-    end
     defp handle_message() do
     end
 
